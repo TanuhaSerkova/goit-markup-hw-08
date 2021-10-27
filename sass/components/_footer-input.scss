@@ -1,0 +1,28 @@
+.mail-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  color: var(--secondary-text-color);
+  &::placeholder {
+    @include font(400, 16px, 1.25);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-input {
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.footer-mail-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

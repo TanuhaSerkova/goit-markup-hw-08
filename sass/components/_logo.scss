@@ -1,0 +1,21 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  color: var(--accent-color);
+  @include font(700, 26px, 1.19);
+  text-decoration: none;
+}
+.logo-header {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-studio {
+  color: var(--title-text-color);
+}
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-studio {
+  color: var(--secondary-text-color);
+}
