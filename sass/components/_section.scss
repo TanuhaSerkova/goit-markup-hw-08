@@ -1,11 +1,18 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section-title {
   color: var(--secondary-text-color);
   margin-bottom: 30px;
-  @include font(900, 44px, 1.36, 0.06em);
+  @include font(900, 26px, 1.62, 0.06em);
   text-align: center;
   text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44px, 1.36, 0.06em);
+  }
 }

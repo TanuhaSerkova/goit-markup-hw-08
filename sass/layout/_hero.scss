@@ -1,8 +1,8 @@
 .hero-section {
-  width: 1600px;
+  width: 480px;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--accent-bgc-color);
   background-image: linear-gradient(
       to right,
@@ -13,4 +13,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
