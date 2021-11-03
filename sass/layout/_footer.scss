@@ -4,8 +4,13 @@
   background-color: var(--accent-bgc-color);
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  width: 100%;
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+  //display: flex;
+  //align-items: baseline;
 }
 .footer-social-icon {
   margin-left: 70px;

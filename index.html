@@ -42,14 +42,37 @@
                                 </svg>+38 096 111 11 11</a></li>
                     </ul>
                 </div>
-                <button class="button-menu-mob">
+                <button type="button" class="button-menu-mob" data-mobile-open>
                     <svg class="open-menu-mob">
                         <use href="./images/menu-mob.svg#icon-menu-mob"></use>
                     </svg>
                 </button>
             </div>
             <div class="backdrop is-hidden">
-                <div class="mob-menu"></div>
+                <div class="mob-menu">
+                    <div class="mob-menu-content">
+                        <ul class="mob-menu-list list">
+                            <li class="mob-menu-item"><a href="./index.html" class="link mob-menu-link current">Студия</a></li>
+                            <li class="mob-menu-item"><a href="./portfolio.html" class="link mob-menu-link">Портфолио</a></li>
+                            <li class="mob-menu-item"><a href="" class="link mob-menu-link">Контакты</a></li>
+                        </ul>
+                        <ul class="mob-menu-contacts list">
+                            <li class=""><a href="mailto:info@devstudio.com" class="mob-menu-mail link">info@devstudio.com</a></li>
+                            <li class=""><a href="tel:+380961111111" class="mob-menu-tel link">+38 096 111 11 11</a></li>
+                        </ul>
+                        <ul class="mob-menu-social list">
+                            <li class="mob-social-item">Instagram</li>
+                            <li class="mob-social-item">Twitter</li>
+                            <li class="mob-social-item">Facebook</li>
+                            <li class="mob-social-item">LinkedIn</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="button-menu-mob" data-mobile-close>
+                        <svg class="close-menu-mob">
+                            <use href="./images/menu-mob.svg#icon-close-mob"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </header>
         <main>   
@@ -331,7 +354,7 @@
             </section>
         </main>
         <!--Подвал страницы-->
-        <!--<footer class="footer">
+        <footer class="footer">
             <div class="container footer-container">
                 <div class="footer-nav">
                 <a href="" class="logo logo-footer">Web<span class="footer-studio">Studio</span></a>
@@ -442,5 +465,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
