@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.social-list, .section-portfolio-buttons {
+.social-list {
   display: flex;
   justify-content: center;
 }
@@ -627,6 +627,12 @@ img {
   padding-top: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
+}
+
 .section-work__title,
 .section-team__title,
 .section-clients__title {
@@ -885,9 +891,11 @@ img {
 
 .section-portfolio {
   background-color: var(--secondary-text-color);
+  margin: 0;
 }
 
 .buttons-portfolio {
+  display: inline-block;
   padding: 6px 22px;
   margin-right: 8px;
   border-radius: 4px;
@@ -908,7 +916,22 @@ img {
 }
 
 .section-portfolio-buttons {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-portfolio-buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-portfolio-buttons {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .section-portfolio-buttons .current {
@@ -923,10 +946,24 @@ img {
 
 /*Портфолио*/
 .section-portfolio-pictures {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-portfolio-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-portfolio-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .portfolio-item-pictures .link {
@@ -935,9 +972,23 @@ img {
 }
 
 .portfolio-item-pictures {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(100% / 9 - 30px);
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-item-pictures {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-item-pictures {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .portfolio-item-pictures .link:hover,
@@ -977,6 +1028,12 @@ img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-pictures {
+    padding-bottom: 54px;
+  }
 }
 
 .section-pictures-title {

@@ -1,5 +1,8 @@
 .section-work {
   padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .section-work__title,
 .section-team__title,
