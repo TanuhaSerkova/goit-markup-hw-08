@@ -1145,12 +1145,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer-social-icon {
-    margin-left: 165px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer-social-icon {
     margin-left: 70px;
@@ -1234,6 +1228,13 @@ img {
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer-list-icon {
+    justify-content: center;
+    margin-bottom: 102px;
+  }
+}
+
 .footer-icon {
   fill: var(--secondary-text-color);
 }
@@ -1250,10 +1251,6 @@ img {
   .footer-subscribr {
     margin-left: auto;
   }
-}
-
-.onlain-subscribr {
-  justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {

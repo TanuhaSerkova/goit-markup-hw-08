@@ -26,11 +26,6 @@
   }
 }
 .footer-social-icon {
-  //display: flex;
-  //justify-content: center;
-  @media screen and (min-width: 768px) {
-    margin-left: 165px;
-  }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
@@ -90,6 +85,10 @@
     justify-content: center;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    justify-content: center;
+    margin-bottom: 102px;
+  }
 }
 .footer-icon {
   fill: var(--secondary-text-color);
@@ -107,7 +106,6 @@
   }
 }
 .onlain-subscribr {
-  justify-content: center;
   @media screen and (min-width: 1200px) {
     display: flex;
   }
