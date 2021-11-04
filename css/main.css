@@ -1092,8 +1092,6 @@ img {
 
 .footer-container {
   width: 100%;
-  justify-content: center;
-  align-items: baseline;
 }
 
 @media screen and (min-width: 768px) {
@@ -1113,13 +1111,27 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .footer-social-icon {
   margin-left: 70px;
 }
 
 .footer-item {
-  display: block;
+  display: flex;
+  justify-content: center;
   font-style: normal;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-item {
+    display: block;
+  }
 }
 
 .footer-item:not(:last-child) {
@@ -1187,10 +1199,6 @@ img {
 
 .footer-subscribr {
   margin-left: auto;
-}
-
-.onlain-subscribr {
-  display: block;
 }
 
 @media screen and (min-width: 1200px) {
