@@ -5,8 +5,16 @@
 }
 .footer-container {
   width: 100%;
-  //align-items: baseline;
+  justify-content: center;
+  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     display: flex;
     align-items: baseline;
   }
