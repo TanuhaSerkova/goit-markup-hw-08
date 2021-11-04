@@ -1094,7 +1094,7 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
     align-items: baseline;
@@ -1111,11 +1111,19 @@ img {
 }
 
 .footer-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
-.footer-list {
-  display: inline-block;
+@media screen and (min-width: 1200px) {
+  .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-item:last-child {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-address {
@@ -1170,7 +1178,13 @@ img {
 }
 
 .onlain-subscribr {
-  display: flex;
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .onlain-subscribr {
+    display: flex;
+  }
 }
 
 .section-portfolio {
