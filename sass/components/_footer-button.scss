@@ -1,7 +1,6 @@
 .footer-button {
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   padding: 10px;
   padding-left: 29px;
   cursor: pointer;
@@ -9,5 +8,12 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }

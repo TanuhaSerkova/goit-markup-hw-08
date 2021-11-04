@@ -25,12 +25,6 @@
     justify-content: center;
   }
 }
-.footer-title {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    justify-content: center;
-  }
-}
 .footer-social-icon {
   //display: flex;
   //justify-content: center;
@@ -85,6 +79,10 @@
   margin-bottom: 20px;
   color: var(--secondary-text-color);
   text-transform: uppercase;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer-list-icon {
   display: flex;
@@ -104,10 +102,12 @@
   }
 }
 .footer-subscribr {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 .onlain-subscribr {
-  //display: block;
+  justify-content: center;
   @media screen and (min-width: 1200px) {
     display: flex;
   }
