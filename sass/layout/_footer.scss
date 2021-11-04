@@ -25,8 +25,21 @@
     justify-content: center;
   }
 }
+.footer-title {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer-social-icon {
-  margin-left: 70px;
+  //display: flex;
+  //justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 .footer-item {
   display: flex;
@@ -75,6 +88,10 @@
 }
 .footer-list-icon {
   display: flex;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 .footer-icon {
   fill: var(--secondary-text-color);

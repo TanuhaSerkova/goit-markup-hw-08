@@ -1,6 +1,9 @@
 .mail-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
   padding-left: 16px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -12,9 +15,19 @@
     @include font(400, 16px, 1.25);
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+  }
 }
 
 .footer-input {
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+  }
   &:hover,
   &:focus {
     border-color: var(--accent-color);
