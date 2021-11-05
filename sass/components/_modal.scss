@@ -19,7 +19,8 @@
 }
 
 .modal {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   min-height: 609px;
   background-color: var(--secondary-text-color);
   border-radius: 4px;
@@ -38,7 +39,7 @@
 
 .close-button {
   position: absolute;
-  left: 412px;
+  right: 8px;
   top: 8px;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -141,6 +142,9 @@
   position: relative;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 480px) {
+    @include font(400, 9px, 1.71);
+  }
   @media screen and (min-width: 1200px) {
     @include font(400, 14px, 1.71);
   }
