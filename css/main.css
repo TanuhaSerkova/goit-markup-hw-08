@@ -234,7 +234,7 @@ img {
 }
 
 .mail-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -242,6 +242,12 @@ img {
   border-radius: 4px;
   outline: none;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .mail-input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -261,9 +267,6 @@ img {
 
 @media screen and (max-width: 1199px) {
   .mail-input.footer-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 20px;
   }
 }
@@ -784,9 +787,14 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
+  .header-item.mail {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .contact-mail {
     padding-top: 21px;
-    padding-bottom: 10px;
   }
 }
 
@@ -1153,11 +1161,7 @@ img {
   background-color: var(--accent-bgc-color);
 }
 
-.footer-container {
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -1175,9 +1179,29 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .footer-nav {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .logo-footer {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social-icon {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer-social-icon {
+    justify-content: center;
+    margin-bottom: 102px;
   }
 }
 
@@ -1206,12 +1230,6 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-item:not(:last-child) {
     margin-bottom: 9px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer-item:last-child {
-    margin-bottom: 60px;
   }
 }
 
@@ -1255,20 +1273,7 @@ img {
 
 .footer-list-icon {
   display: flex;
-}
-
-@media screen and (max-width: 767px) {
-  .footer-list-icon {
-    justify-content: center;
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .footer-list-icon {
-    justify-content: center;
-    margin-bottom: 102px;
-  }
+  justify-content: center;
 }
 
 .footer-icon {

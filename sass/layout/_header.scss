@@ -82,10 +82,14 @@
     padding: 32px 0;
   }
 }
+.header-item.mail {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+}
 .contact-mail {
   @media screen and (max-width: 1199px) {
     padding-top: 21px;
-    padding-bottom: 10px;
   }
 }
 .mail-icon {
