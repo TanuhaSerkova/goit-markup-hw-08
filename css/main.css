@@ -233,7 +233,7 @@ img {
   fill: var(--secondary-text-color);
 }
 
-.mail-input {
+.footer-input {
   width: 100%;
   height: 50px;
   background-color: inherit;
@@ -245,30 +245,30 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .mail-input {
+  .footer-input {
     width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .mail-input {
+  .footer-input {
     width: 358px;
     padding-left: 16px;
   }
 }
 
-.mail-input::placeholder {
+@media screen and (max-width: 1199px) {
+  .footer-input {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-@media screen and (max-width: 1199px) {
-  .mail-input.footer-input {
-    margin-bottom: 20px;
-  }
 }
 
 .footer-input:hover, .footer-input:focus {
@@ -345,7 +345,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 
@@ -365,12 +365,6 @@ img {
 
 .close-button:hover, .close-button:focus {
   fill: var(--accent-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .close-button {
-    left: 490px;
-  }
 }
 
 .close-icon {

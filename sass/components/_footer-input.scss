@@ -1,4 +1,4 @@
-.mail-input {
+.footer-input {
   width: 100%;
   height: 50px;
   @media screen and (min-width: 768px) {
@@ -7,6 +7,9 @@
   @media screen and (min-width: 1200px) {
     width: 358px;
     padding-left: 16px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
   }
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -18,19 +21,11 @@
     @include font(400, 16px, 1.25);
     color: rgba(255, 255, 255, 0.6);
   }
-}
-.mail-input.footer-input {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 20px;
-  }
-}
-.footer-input {
   &:hover,
   &:focus {
     border-color: var(--accent-color);
   }
 }
-
 .footer-mail-icon {
   width: 24px;
   height: 24px;
