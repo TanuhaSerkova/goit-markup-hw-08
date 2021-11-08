@@ -55,14 +55,15 @@
     color: var(--accent-color);
   }
 }
+.mob-menu-tel {
+  color: var(--accent-color);
+}
+.mob-menu-mail {
+  color: var(--primary-text-color);
+}
 .mob-menu-mail,
 .mob-menu-tel {
-  color: #757575;
   display: block;
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 }
 .mob-contacts {
   margin-bottom: 64px;

@@ -608,16 +608,17 @@ img {
   color: var(--accent-color);
 }
 
-.mob-menu-mail,
 .mob-menu-tel {
-  color: #757575;
-  display: block;
+  color: var(--accent-color);
 }
 
-.mob-menu-mail:hover, .mob-menu-mail:focus,
-.mob-menu-tel:hover,
-.mob-menu-tel:focus {
-  color: var(--accent-color);
+.mob-menu-mail {
+  color: var(--primary-text-color);
+}
+
+.mob-menu-mail,
+.mob-menu-tel {
+  display: block;
 }
 
 .mob-contacts {
