@@ -4,8 +4,6 @@
   background-color: var(--accent-bgc-color);
 }
 .footer-container {
-  //justify-content: center;
-  //align-items: baseline;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
@@ -28,8 +26,10 @@
     display: flex;
     justify-content: center;
   }
-}
-.footer-social-icon {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer-social-icon {
   @media screen and (max-width: 767px) {
@@ -81,6 +81,7 @@
 }
 .footer-title {
   margin-bottom: 20px;
+  align-items: center;
   color: var(--secondary-text-color);
   text-transform: uppercase;
   @media screen and (max-width: 1199px) {
