@@ -583,6 +583,8 @@ img {
 
 .mob-menu {
   width: 100%;
+  max-width: 480px;
+  max-height: 796px;
   height: 100%;
   padding: 48px 40px;
   position: absolute;
